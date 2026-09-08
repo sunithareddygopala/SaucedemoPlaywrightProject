@@ -1,0 +1,16 @@
+{
+    "credentials":{
+                    "validuser":"standard_user",
+                    "validPassword":"secret_sauce",
+                    "lockeduser":"locked_out_user",
+                    "invalidPassword":"sjdkl",
+                    "invaliduser":"standarduser"
+                    },
+
+    "expectedMessages":{
+                            "lockedUserError":"Epic sadface: Sorry, this user has been locked out.",
+                            "invalidUserError":"Epic sadface: Username and password do not match any user in this service"
+
+                        }
+
+}   
