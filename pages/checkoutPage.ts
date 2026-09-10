@@ -25,9 +25,9 @@ export class CheckoutPage {
         this.lastNameInput = page.getByRole('textbox', { name: 'Last Name' });
         this.postalCodeInput = page.getByRole('textbox', { name: 'Zip/Postal Code' });
         this.continueButton = page.getByRole('button', { name: 'Continue' });
-        this.subtotal = page.getByTestId('subtotal-label');
-        this.tax = page.getByTestId('tax-label');
-        this.total = page.getByTestId('total-label');
+        this.subtotal = page.locator('.summary_subtotal_label');
+        this.tax = page.locator('.summary_tax_label');
+        this.total = page.locator('.summary_total_label');
         this.finishButton = page.getByRole('button', { name: 'Finish' });
         this.confirmationMessage = page.getByText('Thank you for your order!');
         this.backHomeButton = page.getByRole('button', { name: 'Back Home' });
