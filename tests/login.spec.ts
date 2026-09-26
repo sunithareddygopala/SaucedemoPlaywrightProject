@@ -139,7 +139,7 @@ test.describe('SauceDemo Login tests', () => {
 
     })
 
-    test.only('LOGIN-08 - login with lockedoutuser  and password', async ({ page, loginPage }) => {
+    test('LOGIN-08 - login with lockedoutuser  and password', async ({ page, loginPage }) => {
         /*  1. Enter username locked_out_user.
             2. Enter password secret_sauce.
             3. Click Login.*/
