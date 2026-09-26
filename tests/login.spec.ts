@@ -161,6 +161,7 @@ test.describe('SauceDemo Login tests', () => {
             2. Enter password secret_sauce.
             3. Click Login.*/
 
+//login functionality is tested here, any functional inconsistencies should be captured.
 
         loginPage.performLogin('problem_user', 'secret_sauce')
 
