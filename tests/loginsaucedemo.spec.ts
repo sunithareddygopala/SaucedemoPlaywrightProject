@@ -25,6 +25,8 @@ test.describe('Sauce Demo Login Authentication and Validation', () => {
     // 2. Click Login.
     await loginPage.clickLoginButton();
 
+    
+
     // 3. Verify the required username error is displayed.
     await expect(loginPage.errorMessage).toContainText('Epic sadface: Username is required');
     await expect(page).toHaveURL(/.*\/$/);
